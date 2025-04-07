@@ -37,13 +37,13 @@ python main.py --ont ontology
 ```
 where **ontology** can be ```bp```, ```cc```, or ```mf``` for Biological Process, Cellular Component and Molecular Function, respectively.
 
-```main.py``` executes the pipeline of SUPERMAGO and SUPERMAGO+ as follows:
+```main.py``` executes the pipeline of SUPERMAGOv2 and SUPERMAGOv2+ as follows:
 * ```extract.py``` extracts the embeddings given the model name (```esm``` or ```t5```) and ontology (```bp```, ```cc``` or ```mf```).
-* ```layer_classificaton.py``` runs the neural network for a specific layer (```36```, ```35```, ```34```, ```33```, ```32``` for ESM2 T36; ```24```, ```23```, ```22```, ```21```, ```20``` for ProtT5) and ontology (```bp```, ```cc``` or ```mf```).
-* ```stacking.py``` runs the stacking model for a specific ontology (```bp```, ```cc``` or ```mf```) and generates the prediction of SUPERMAGO.
-* ```diamond.py``` runs DIAMOND for a specific ontology (```bp```, ```cc``` or ```mf```).
-* ```ensemble.py``` generates the final prediction of SUPERMAGO+ for a specific ontology (```bp```, ```cc``` or ```mf```).
-* ```evaluate.py``` evaluates the predictions.
+* ```diamond.py``` runs DIAMOND predictions and bitscore-weighted features for a specific ontology (```bp```, ```cc``` or ```mf```).
+* ```mlp.py``` runs the MLP for a specific layer (```36```, ```35```, ```34```, ```24```, ```23```, or ```22```) and ontology (```bp```, ```cc``` or ```mf```).
+* ```resnet50.py``` runs ResNet50 for a specific ontology (```bp```, ```cc``` or ```mf```).
+* ```stacking.py``` runs the stacking model for a specific ontology (```bp```, ```cc``` or ```mf```) and generates the prediction of SUPERMAGOv2.
+* ```ensemble.py``` generates the final prediction of SUPERMAGOv2+ for a specific ontology (```bp```, ```cc``` or ```mf```).
 
 ## Dataset Adaptation
 If you need to run SUPERMAGOv2 and SUPERMAGOv2+ on your own dataset, you must create a dataset with the same structure as ours. This includes a CSV file for each ontology, with the first column containing the protein ID, the second column containing the protein sequence, and the remaining columns containing terms in one-hot encoding format. You should also calculate the IC values for evaluation and save it in a csv file.

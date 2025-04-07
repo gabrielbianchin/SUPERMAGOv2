@@ -1,0 +1,9 @@
+pandas==2.2.2
+numpy==1.24.3
+click==8.1.7
+tqdm==4.66.4
+torch==2.5.1+cu121
+torchvision=0.20.1+cu121
+transformers==4.45.1
+PIL==10.3.0
+accelerate==0.30.1
