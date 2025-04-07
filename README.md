@@ -23,10 +23,10 @@ The dataset for this work is available [here](https://zenodo.org/records/1098290
 The IC values used in evaluation is available [here](https://zenodo.org/records/13362841).
 
 ## Models
-Our layer-base models for each ontology are available here.
+Our trained models for each ontology are available [here](https://drive.google.com/drive/folders/1gMR2IpW268Y_J0ehYahNe1OohhB1tGA_?usp=sharing).
 
 ## Predictions
-The predictions of SUPERMAGO and SUPERMAGO+ are available here.
+The predictions of SUPERMAGOv2 and SUPERMAGOv2+ are available [here](https://drive.google.com/drive/folders/12_w-CMFWD1ghTf7hDYcTF_TEBmNrUqtl?usp=sharing).
 
 ## Reproducibility
 * Navigate to ```src``` folder and run ```setup.py```.
