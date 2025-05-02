@@ -34,7 +34,7 @@ def main(ont):
     root = 'GO:0003674'
 
   preds_val, preds_test = [], []
-  for layer in ['mlp-12', 'mlp-11', 'mlp-10', 'mlp-24', 'mlp-23', 'mlp-22', 'resnet50']:
+  for layer in ['mlp-36', 'mlp-35', 'mlp-34', 'mlp-24', 'mlp-23', 'mlp-22', 'resnet50']:
     preds_val.append(np.load(f'../preds/{ont}-{layer}-val.npy'))
     preds_test.append(np.load(f'../preds/{ont}-{layer}-test.npy'))
 
